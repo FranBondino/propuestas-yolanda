@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Yolanda María Verbauwede — Educación, Psicología Social y Gestión</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>document.documentElement.classList.add('js-motion');</script>
+  <link rel="stylesheet" href="assets/editorial-motion.css" />
+  <style>
+    :root {
+      --navy: #1B365D;
+      --navy-deep: #10233F;
+      --slate-blue: #3B6998;
+      --terracotta: #C86D51;
+      --terracotta-hover: #B35A3E;
+      --ivory: #FAF8F5;
+      --sand: #F1ECE4;
+      --mist: #EEF2F6;
+      --ink: #1E293B;
+      --ink-muted: #526071;
+      --rule: rgba(27, 54, 93, 0.16);
+      --rule-strong: rgba(27, 54, 93, 0.42);
+      --font-serif: 'Newsreader', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+      --font-mono: 'IBM Plex Mono', monospace;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--ivory);
+      color: var(--ink);
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.65;
+      background-color: var(--ivory);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1240px, 100% - 2.5rem);
+      margin-inline: auto;
+    }
+
+    /* Cabecera Editorial-Estructural */
+    .header-bar {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background-color: rgba(250, 248, 245, 0.96);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--rule-strong);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding: 0.85rem 0;
+    }
+
+    .brand-lockup {
+      display: flex;
+      align-items: baseline;
+      gap: 0.9rem;
+      flex-wrap: wrap;
+    }
+
+    .monogram {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      color: var(--terracotta);
+    }
+
+    .brand-title {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--navy);
+      letter-spacing: -0.015em;
+    }
+
+    .brand-loc {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      border-left: 1px solid var(--rule-strong);
+      padding-left: 0.85rem;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      font-size: 0.88rem;
+      font-weight: 500;
+    }
+
+    .nav-menu a {
+      color: var(--ink);
+      transition: color 0.2s ease;
+    }
+
+    .nav-menu a:hover {
+      color: var(--terracotta);
+    }
+
+    .nav-menu .nav-btn {
+      background-color: var(--navy);
+      color: #FFFFFF;
+      padding: 0.58rem 1.2rem;
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: background-color 0.2s ease;
+    }
+
+    .nav-menu .nav-btn:hover {
+      background-color: var(--terracotta);
+      color: #FFFFFF;
+    }
+
+    .nav-toggle {
+      display: none;
+      background: transparent;
+      border: 1px solid var(--navy);
+      color: var(--navy);
+      padding: 0.35rem 0.75rem;
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    /* Hero Banda Horizonte (cero cajas, cero doble marco) */
+    .hero-horizon {
+      border-bottom: 2px solid var(--navy);
+      background: linear-gradient(90deg, var(--ivory) 58.333%, var(--sand) 58.333%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+      align-items: stretch;
+    }
+
+    .hero-left-col {
+      background-color: var(--ivory);
+      padding: clamp(2.8rem, 5vw, 4.6rem) clamp(1.5rem, 4vw, 3.5rem) clamp(2.8rem, 5vw, 4.2rem) 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .axes-mono {
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      margin-bottom: 1.25rem;
+    }
+
+    .horizon-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.45rem, 4.7vw, 4.15rem);
+      font-weight: 500;
+      line-height: 1.07;
+      letter-spacing: -0.02em;
+      color: var(--navy);
+      margin: 0 0 1.4rem;
+    }
+
+    .horizon-title em {
+      font-style: italic;
+      font-weight: 400;
+      color: var(--terracotta);
+    }
+
+    .horizon-lead {
+      font-size: clamp(1rem, 1.25vw, 1.12rem);
+      color: var(--ink);
+      max-width: 56ch;
+      margin: 0 0 2rem;
+    }
+
+    .horizon-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.35rem;
+    }
+
+    .btn-terracotta {
+      display: inline-block;
+      background-color: var(--terracotta);
+      color: #FFFFFF;
+      padding: 0.88rem 1.7rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn-terracotta:hover {
+      background-color: var(--terracotta-hover);
+    }
+
+    .link-underline {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--navy);
+      border-bottom: 1.5px solid var(--navy);
+      padding-bottom: 3px;
+    }
+
+    .link-underline:hover {
+      color: var(--terracotta);
+      border-color: var(--terracotta);
+    }
+
+    .hero-right-band {
+      background-color: var(--sand);
+      border-left: 1px solid var(--rule);
+      padding: clamp(1.5rem, 3vw, 2.5rem) 0 0 clamp(1.25rem, 3vw, 2.5rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+
+    .side-dossier {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 0.85rem;
+      margin-bottom: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--ink-muted);
+    }
+
+    .side-dossier strong {
+      display: block;
+      color: var(--navy);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.15rem;
+    }
+
+    .horizon-portrait {
+      width: 100%;
+      max-width: 440px;
+      height: auto;
+      margin: 0 auto;
+      mix-blend-mode: multiply;
+    }
+
+    /* Franja Institucional en Marino */
+    .navy-strip {
+      background-color: var(--navy);
+      color: var(--ivory);
+      border-bottom: 1px solid var(--navy-deep);
+    }
+
+    .navy-cols {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .navy-col {
+      padding: 2rem clamp(1.25rem, 2.5vw, 2rem);
+      border-right: 1px solid rgba(250, 248, 245, 0.18);
+    }
+
+    .navy-col:first-child {
+      padding-left: 0;
+    }
+
+    .navy-col:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
+
+    .navy-kicker {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: #E8A690;
+      margin-bottom: 0.5rem;
+    }
+
+    .navy-col h2 {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      font-weight: 500;
+      color: #FFFFFF;
+      margin: 0 0 0.45rem;
+    }
+
+    .navy-col p {
+      font-size: 0.92rem;
+      color: rgba(250, 248, 245, 0.84);
+      margin: 0;
+    }
+
+    /* Sección Genérica */
+    .editorial-sec {
+      padding: clamp(3.4rem, 6vw, 5rem) 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .sec-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--rule-strong);
+    }
+
+    .sec-label {
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      margin-bottom: 0.45rem;
+    }
+
+    .sec-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.95rem, 3.3vw, 2.85rem);
+      font-weight: 500;
+      line-height: 1.1;
+      color: var(--navy);
+      margin: 0;
+    }
+
+    .sec-title em {
+      font-style: italic;
+      color: var(--terracotta);
+    }
+
+    .sec-sub {
+      max-width: 44ch;
+      font-size: 0.94rem;
+      color: var(--ink-muted);
+      margin: 0;
+    }
+
+    /* Práctica Profesional en Doble Columna Interactiva */
+    .practice-split {
+      display: grid;
+      grid-template-columns: minmax(270px, 4.5fr) minmax(0, 7.5fr);
+      gap: clamp(1.5rem, 3vw, 3rem);
+      align-items: start;
+    }
+
+    .chapter-nav {
+      display: flex;
+      flex-direction: column;
+      border-top: 2px solid var(--navy);
+    }
+
+    .chapter-btn {
+      width: 100%;
+      text-align: left;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid var(--rule);
+      padding: 1.15rem 0.9rem;
+      display: grid;
+      grid-template-columns: 36px minmax(0, 1fr);
+      gap: 0.75rem;
+      cursor: pointer;
+      transition: background-color 0.15s ease, padding-left 0.15s ease;
+    }
+
+    .chapter-btn:hover {
+      background-color: var(--mist);
+    }
+
+    .chapter-btn.is-active {
+      background-color: var(--sand);
+      border-left: 3px solid var(--terracotta);
+      padding-left: 1.1rem;
+    }
+
+    .chapter-idx {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--terracotta);
+      padding-top: 3px;
+    }
+
+    .chapter-btn strong {
+      display: block;
+      font-family: var(--font-serif);
+      font-size: 1.24rem;
+      font-weight: 600;
+      color: var(--navy);
+      line-height: 1.2;
+      margin-bottom: 0.2rem;
+    }
+
+    .chapter-btn span.sub {
+      font-size: 0.84rem;
+      color: var(--ink-muted);
+      display: block;
+    }
+
+    .chapter-sheet {
+      background-color: var(--mist);
+      border-top: 2px solid var(--navy);
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      min-height: 360px;
+    }
+
+    .sheet-copy {
+      padding: clamp(1.5rem, 3vw, 2.4rem);
+    }
+
+    .sheet-meta {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--slate-blue);
+      margin-bottom: 0.6rem;
+    }
+
+    .sheet-copy h3 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.55rem, 2.4vw, 2rem);
+      color: var(--navy);
+      margin: 0 0 0.75rem;
+      line-height: 1.15;
+    }
+
+    .sheet-copy p {
+      font-size: 0.95rem;
+      color: var(--ink-muted);
+      margin: 0 0 1.25rem;
+    }
+
+    .sheet-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 0.45rem;
+      border-top: 1px solid var(--rule);
+      padding-top: 1rem;
+    }
+
+    .sheet-list li {
+      position: relative;
+      padding-left: 1.1rem;
+      font-size: 0.92rem;
+      color: var(--ink);
+    }
+
+    .sheet-list li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--terracotta);
+    }
+
+    .sheet-bleed-photo {
+      position: relative;
+      min-height: 260px;
+      background-color: var(--navy-deep);
+    }
+
+    .sheet-bleed-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .sheet-photo-cap {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, transparent 0%, rgba(16, 35, 63, 0.88) 100%);
+      color: #FFFFFF;
+      padding: 2rem 1.1rem 0.9rem;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+    }
+
+    /* Pliego Académico de 11 Credenciales */
+    .quote-ribbon {
+      background-color: var(--sand);
+      padding: 1.85rem clamp(1.5rem, 3vw, 2.5rem);
+      border-left: 3px solid var(--terracotta);
+      margin-bottom: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .quote-ribbon blockquote {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: clamp(1.3rem, 2.1vw, 1.65rem);
+      line-height: 1.35;
+      color: var(--navy);
+      margin: 0;
+      max-width: 58ch;
+    }
+
+    .quote-ribbon span {
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      color: var(--ink-muted);
+      max-width: 34ch;
+    }
+
+    .academic-cols {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2.5rem;
+    }
+
+    .acad-block h3 {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--slate-blue);
+      border-bottom: 2px solid var(--navy);
+      padding-bottom: 0.5rem;
+      margin: 0 0 0.75rem;
+    }
+
+    .acad-items {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .acad-items li {
+      padding: 0.65rem 0;
+      border-bottom: 1px solid var(--rule);
+      display: grid;
+      grid-template-columns: 34px minmax(0, 1fr);
+      gap: 0.6rem;
+      align-items: baseline;
+      font-size: 0.96rem;
+    }
+
+    .acad-items li span {
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      color: var(--terracotta);
+    }
+
+    /* Díptico Fotográfico de Territorio a Sangre */
+    .diptych-grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 4px;
+      background-color: var(--ivory);
+    }
+
+    .diptych-item {
+      margin: 0;
+      position: relative;
+      overflow: hidden;
+      background-color: var(--navy-deep);
+    }
+
+    .diptych-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .diptych-caption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, transparent 0%, rgba(16, 35, 63, 0.9) 100%);
+      color: #FFFFFF;
+      padding: 2.5rem 1.25rem 1rem;
+      font-size: 0.88rem;
+    }
+
+    .diptych-caption strong {
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #E8A690;
+      margin-bottom: 0.2rem;
+    }
+
+    .d-large {
+      grid-column: span 7;
+      height: 360px;
+    }
+
+    .d-side {
+      grid-column: span 5;
+      height: 360px;
+    }
+
+    .d-half {
+      grid-column: span 6;
+      height: 310px;
+    }
+
+    /* Contacto */
+    .contact-band {
+      background-color: var(--navy-deep);
+      color: var(--ivory);
+      padding: clamp(3.4rem, 6vw, 5rem) 0;
+    }
+
+    .contact-split {
+      display: grid;
+      grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+      gap: clamp(2rem, 4vw, 4rem);
+      align-items: start;
+    }
+
+    .contact-split h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 3.2vw, 2.75rem);
+      color: #FFFFFF;
+      margin: 0.35rem 0 1rem;
+      line-height: 1.12;
+    }
+
+    .contact-split h2 em {
+      font-style: italic;
+      color: #E8A690;
+    }
+
+    .contact-lines {
+      margin-top: 1.75rem;
+      border-top: 1px solid rgba(250, 248, 245, 0.2);
+    }
+
+    .contact-line {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(250, 248, 245, 0.14);
+      font-size: 0.92rem;
+    }
+
+    .contact-line span {
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: #E8A690;
+    }
+
+    .form-panel {
+      background-color: var(--ivory);
+      color: var(--ink);
+      padding: clamp(1.5rem, 3vw, 2.3rem);
+      border-top: 4px solid var(--terracotta);
+    }
+
+    .form-two {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      align-items: end;
+    }
+
+    .f-group {
+      margin-bottom: 1rem;
+    }
+
+    .f-group label {
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 0.35rem;
+    }
+
+    .f-group input,
+    .f-group select,
+    .f-group textarea {
+      width: 100%;
+      padding: 0.72rem 0.85rem;
+      border: 1px solid var(--rule-strong);
+      background-color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: 0.94rem;
+      color: var(--ink);
+    }
+
+    .f-group input:focus,
+    .f-group select:focus,
+    .f-group textarea:focus {
+      outline: 2px solid var(--terracotta);
+      border-color: var(--terracotta);
+    }
+
+    .form-msg {
+      display: none;
+      margin-top: 1rem;
+      padding: 0.85rem 1rem;
+      background-color: var(--mist);
+      border-left: 3px solid var(--navy);
+      font-size: 0.9rem;
+    }
+
+    .footer-strip {
+      background-color: #0B192E;
+      color: rgba(250, 248, 245, 0.72);
+      padding: 1.3rem 0;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+    }
+
+    .footer-flex {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    @media (max-width: 980px) {
+      .hero-horizon {
+        background: var(--ivory);
+      }
+      .hero-grid,
+      .navy-cols,
+      .practice-split,
+      .chapter-sheet,
+      .academic-cols,
+      .contact-split {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .hero-left-col {
+        padding: 2.5rem 0 2rem;
+      }
+      .hero-right-band {
+        border-left: none;
+        border-top: 1px solid var(--rule);
+        padding: 1.5rem 1.25rem 0;
+        margin-inline: -1.25rem;
+      }
+      .navy-col {
+        border-right: none;
+        border-bottom: 1px solid rgba(250, 248, 245, 0.16);
+        padding: 1.5rem 0;
+      }
+      .navy-col:last-child {
+        border-bottom: none;
+      }
+      .d-large, .d-side, .d-half {
+        grid-column: span 12;
+        height: 280px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .brand-loc {
+        display: none;
+      }
+      .nav-toggle {
+        display: inline-block;
+      }
+      .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--ivory);
+        border-bottom: 2px solid var(--navy);
+        padding: 1rem 1.25rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.9rem;
+      }
+      .nav-menu.is-open {
+        display: flex;
+      }
+      .form-two {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header-bar">
+    <div class="container header-inner">
+      <div class="brand-lockup">
+        <span class="monogram">YMV</span>
+        <a href="#inicio" class="brand-title">Yolanda María Verbauwede</a>
+        <span class="brand-loc">Villaguay · Entre Ríos</span>
+      </div>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false">Menú</button>
+      <nav class="nav-menu" id="navMenu" aria-label="Navegación principal">
+        <a href="#practica">Práctica</a>
+        <a href="#formacion">Formación</a>
+        <a href="#territorio">Territorio</a>
+        <a href="#contacto" class="nav-btn">Consultar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- Hero Banda Horizonte (sin cajas ni marcos) -->
+    <section class="hero-horizon">
+      <div class="container hero-grid">
+        <div class="hero-left-col">
+          <div class="axes-mono">Educación · Gestión Institucional · Psicología Social · CGT Villaguay</div>
+          <h1 class="horizon-title">
+            Conducción educativa y <em>vínculos grupales</em> al servicio de la transformación social.
+          </h1>
+          <p class="horizon-lead">
+            Soy Yolanda María Verbauwede: Magíster y Licenciada en Gestión Educativa, Directora de institución educativa, Técnica Superior Operadora en Psicología Social y Secretaria General de la CGT Regional Villaguay (UDA).
+          </p>
+          <div class="horizon-actions">
+            <a href="#contacto" class="btn-terracotta">Coordinar mentoría o taller</a>
+            <a href="#practica" class="link-underline">Recorrer áreas de práctica</a>
+          </div>
+        </div>
+
+        <div class="hero-right-band">
+          <div class="side-dossier">
+            <div>
+              <strong>Dirección y Psicología Social</strong>
+              <span>Escuelas, equipos y organizaciones</span>
+            </div>
+            <div>
+              <strong>Modalidad</strong>
+              <span>Presencial · Virtual</span>
+            </div>
+          </div>
+          <img class="horizon-portrait" src="assets/retrato-papel.jpg" alt="Yolanda María Verbauwede" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Franja Institucional Marino -->
+    <section class="navy-strip" aria-label="Pilares de trayectoria">
+      <div class="container navy-cols">
+        <article class="navy-col">
+          <div class="navy-kicker">01 · Conducción Escolar</div>
+          <h2>Oposición aprobada y gestión integral</h2>
+          <p>Directora de institución educativa con recorrido previo como secretaria y vicedirectora, uniendo liderazgo pedagógico y administración.</p>
+        </article>
+        <article class="navy-col">
+          <div class="navy-kicker">02 · Territorio CGE (2021–2023)</div>
+          <h2>Programa Presentes</h2>
+          <p>Coordinación departamental durante 2021, 2022 y 2023 en proyectos educativos y comunitarios del Consejo General de Educación.</p>
+        </article>
+        <article class="navy-col">
+          <div class="navy-kicker">03 · CGT Regional Villaguay · UDA</div>
+          <h2>Representación y derechos laborales</h2>
+          <p>Secretaria General de la CGT Regional Villaguay y referente de UDA, impulsando espacios de formación gremial y negociación colectiva.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Práctica Profesional en Doble Columna Interactiva -->
+    <section id="practica" class="editorial-sec">
+      <div class="container">
+        <div class="sec-head">
+          <div>
+            <div class="sec-label">§ 02 — Servicios Profesionales</div>
+            <h2 class="sec-title">Espacios de <em>acompañamiento, formación y gestión</em></h2>
+          </div>
+          <p class="sec-sub">
+            Propuestas diseñadas para personas, mujeres, docentes, equipos directivos, empresas y organizaciones sindicales.
+          </p>
+        </div>
+
+        <div class="practice-split">
+          <div class="chapter-nav" role="tablist" aria-label="Capítulos de servicios">
+            <button class="chapter-btn is-active" type="button" data-sheet="talleres">
+              <span class="chapter-idx">01</span>
+              <span>
+                <strong>Capacitaciones y talleres</strong>
+                <span class="sub">SAGE, IA en educación, liderazgo y emoción</span>
+              </span>
+            </button>
+            <button class="chapter-btn" type="button" data-sheet="mentorias">
+              <span class="chapter-idx">02</span>
+              <span>
+                <strong>Mentorías y desarrollo personal</strong>
+                <span class="sub">Psicología Social, mujeres y acompañamiento</span>
+              </span>
+            </button>
+            <button class="chapter-btn" type="button" data-sheet="institucional">
+              <span class="chapter-idx">03</span>
+              <span>
+                <strong>Asesoramiento institucional</strong>
+                <span class="sub">Gestión educativa, proyectos y empresas</span>
+              </span>
+            </button>
+            <button class="chapter-btn" type="button" data-sheet="gremial">
+              <span class="chapter-idx">04</span>
+              <span>
+                <strong>Formación y representación gremial</strong>
+                <span class="sub">Derechos laborales, normativa docente y negociación</span>
+              </span>
+            </button>
+            <button class="chapter-btn" type="button" data-sheet="equipos">
+              <span class="chapter-idx">05</span>
+              <span>
+                <strong>Liderazgo y orientación psicosocial</strong>
+                <span class="sub">Vínculos grupales y resolución de conflictos</span>
+              </span>
+            </button>
+          </div>
+
+          <div class="chapter-sheet" id="chapterSheet"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pliego Académico -->
+    <section id="formacion" class="editorial-sec">
+      <div class="container">
+        <div class="sec-head">
+          <div>
+            <div class="sec-label">§ 03 — Formación Académica</div>
+            <h2 class="sec-title">Actualización continua en <em>gestión y vínculos</em></h2>
+          </div>
+          <p class="sec-sub">
+            Once titulaciones universitarias, tecnicaturas superiores y diplomaturas orientadas a la comprensión de las personas y las organizaciones.
+          </p>
+        </div>
+
+        <div class="quote-ribbon">
+          <blockquote>
+            “Creo en la educación como motor de transformación social y en la importancia de escuchar, acompañar y fortalecer vínculos.”
+          </blockquote>
+          <span>
+            Herramientas de Counseling, Educación Emocional, Educación en Valores y Neurociencia aplicadas al trabajo institucional.
+          </span>
+        </div>
+
+        <div class="academic-cols">
+          <div class="acad-block">
+            <h3>Posgrado, Grado y Tecnicaturas</h3>
+            <ul class="acad-items">
+              <li><span>01</span> Maestría en Gestión y Asesoramiento Pedagógico de las Organizaciones Educativas.</li>
+              <li><span>02</span> Licenciatura en Gestión y Asesoramiento de las Instituciones Educativas.</li>
+              <li><span>03</span> Profesorado de Primer y Segundo Ciclo de la EGB.</li>
+              <li><span>04</span> Técnica Superior Operadora en Psicología Social.</li>
+              <li><span>05</span> Tecnicatura en Orientación del Desarrollo Personal – Counseling.</li>
+            </ul>
+          </div>
+
+          <div class="acad-block">
+            <h3>Diplomaturas y Especializaciones</h3>
+            <ul class="acad-items">
+              <li><span>06</span> Diplomatura en Educación Emocional.</li>
+              <li><span>07</span> Diplomatura en Neurociencia y Educación.</li>
+              <li><span>08</span> Diplomatura en Abordaje Integral del Consumo Problemático.</li>
+              <li><span>09</span> Diplomatura en Educación en Valores.</li>
+              <li><span>10</span> Diplomatura en Inteligencia Artificial para Docentes.</li>
+              <li><span>11</span> Formación en Gestión Educativa, Investigación e Intervención Comunitaria.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Díptico Fotográfico de Territorio a Sangre -->
+    <section id="territorio" class="editorial-sec">
+      <div class="container">
+        <div class="sec-head">
+          <div>
+            <div class="sec-label">§ 04 — En Territorio</div>
+            <h2 class="sec-title">Práctica viva en <em>escuelas, talleres y gremios</em></h2>
+          </div>
+          <p class="sec-sub">
+            Registros de dinámicas grupales, jornadas de formación docente y articulación regional.
+          </p>
+        </div>
+
+        <div class="diptych-grid">
+          <figure class="diptych-item d-large">
+            <img src="assets/taller-uda.png" alt="Dinámica participativa en sede de UDA Entre Ríos" />
+            <figcaption class="diptych-caption">
+              <strong>Talleres y capacitaciones · UDA</strong>
+              Dinámica grupal participativa para fortalecer la comunicación y el trabajo en equipo docente.
+            </figcaption>
+          </figure>
+          <figure class="diptych-item d-side">
+            <img src="assets/selfie-auditorio.jpg" alt="Yolanda con asistentes en auditorio" style="object-position: center 74%;" />
+            <figcaption class="diptych-caption">
+              <strong>Encuentros presenciales</strong>
+              Acompañamiento a comunidades educativas y grupos de formación en Entre Ríos.
+            </figcaption>
+          </figure>
+          <figure class="diptych-item d-half">
+            <img src="assets/red-vinculos-patio.jpg" alt="Dinámica de red con hilo rosa en escuela" />
+            <figcaption class="diptych-caption">
+              <strong>Trabajo en escuelas · Psicología Social</strong>
+              Dispositivo vivencial de red vincular en patio escolar sobre roles y sostén colectivo.
+            </figcaption>
+          </figure>
+          <figure class="diptych-item d-half">
+            <img src="assets/cgt-institucional.jpg" alt="Representación gremial en CGT Regional Villaguay" style="object-position: center 20%;" />
+            <figcaption class="diptych-caption">
+              <strong>CGT Regional Villaguay</strong>
+              Encuentro institucional junto a organizaciones gremiales en defensa de los trabajadores.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto Directo -->
+    <section id="contacto" class="contact-band">
+      <div class="container contact-split">
+        <div>
+          <div class="sec-label" style="color: #E8A690;">§ 05 — Contacto</div>
+          <h2>Armemos un espacio de <em>formación o consulta</em></h2>
+          <p style="color: rgba(250, 248, 245, 0.86);">
+            Consultas para mentorías individuales o grupales, talleres en instituciones educativas o empresas y formación gremial.
+          </p>
+
+          <div class="contact-lines">
+            <div class="contact-line">
+              <span>Sede territorial y modalidad</span>
+              Villaguay, Entre Ríos · Presencial y Virtual
+            </div>
+            <div class="contact-line">
+              <span>WhatsApp directo</span>
+              Atención por WhatsApp directo y agenda coordinada
+            </div>
+            <div class="contact-line">
+              <span>Correo electrónico y redes</span>
+              Correo institucional y redes profesionales
+            </div>
+          </div>
+        </div>
+
+        <form class="form-panel" id="dForm">
+          <div class="form-two">
+            <div class="f-group">
+              <label for="dName">Nombre y apellido</label>
+              <input id="dName" type="text" required placeholder="Ej. Laura Gómez" />
+            </div>
+            <div class="f-group">
+              <label for="dOrg">Institución / Empresa (opcional)</label>
+              <input id="dOrg" type="text" placeholder="Escuela, organización o particular" />
+            </div>
+          </div>
+          <div class="f-group">
+            <label for="dTopic">Servicio de interés</label>
+            <select id="dTopic">
+              <option value="Capacitaciones y talleres (SAGE, IA, Emocional)">Capacitaciones y talleres (SAGE, IA, Emocional)</option>
+              <option value="Mentorías individuales / para mujeres">Mentorías individuales / para mujeres</option>
+              <option value="Mentoría en Psicología Social">Mentoría en Psicología Social</option>
+              <option value="Asesoramiento institucional">Asesoramiento y acompañamiento institucional</option>
+              <option value="Formación y normativa gremial">Formación y normativa gremial</option>
+            </select>
+          </div>
+          <div class="f-group">
+            <label for="dMsg">Mensaje</label>
+            <textarea id="dMsg" rows="3" required placeholder="Indicá modalidad presencial o virtual y el objetivo de tu consulta..."></textarea>
+          </div>
+          <button type="submit" class="btn-terracotta" style="border: none; cursor: pointer;">Preparar consulta</button>
+          <div class="form-msg" id="dMsgBox"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-strip">
+    <div class="container footer-flex">
+      <span>Yolanda María Verbauwede · Educación · Gestión Institucional · Psicología Social · CGT Villaguay</span>
+      <span>Villaguay, Entre Ríos · Argentina</span>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    navToggle.addEventListener('click', () => {
+      const open = navMenu.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', String(open));
+    });
+    navMenu.querySelectorAll('a').forEach((a) => {
+      a.addEventListener('click', () => {
+        navMenu.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    const SHEETS = {
+      talleres: {
+        meta: 'Presencial o Virtual · Escuelas, Docentes y Empresas',
+        title: 'Capacitaciones y talleres de formación',
+        desc: 'Dispositivos prácticos que combinan herramientas administrativas y normativas vigentes con desarrollo humano e innovación.',
+        items: [
+          'Cómo trabajar los grupos y los vínculos.',
+          'Liderazgo y trabajo en equipo.',
+          'Educación emocional.',
+          'Comunicación y resolución de conflictos.',
+          'Gestión y administración educativa.',
+          'SAGE y licencias docentes.',
+          'Psicología Social aplicada a las instituciones y empresas.',
+          'Inteligencia artificial en educación.'
+        ],
+        img: 'assets/taller-uda.png',
+        cap: 'Taller vivencial en sede UDA Seccional Entre Ríos.'
+      },
+      mentorias: {
+        meta: 'Procesos Individuales y Grupales',
+        title: 'Mentorías en Psicología Social y desarrollo personal',
+        desc: 'Acompañamiento reflexivo basado en Psicología Social y Counseling para potenciar proyectos, roles y autonomía.',
+        items: [
+          'Mentoría en Psicología Social: reflexión sobre grupos, vínculos, roles, comunicación y procesos grupales.',
+          'Mentoría para mujeres y desarrollo personal: fortalecimiento de capacidades, proyectos personales, autoestima y liderazgo.',
+          'Orientación y acompañamiento psicosocial personalizado.'
+        ],
+        img: 'assets/ronda-trabajo.jpg',
+        cap: 'Ronda de escucha y elaboración grupal.'
+      },
+      institucional: {
+        meta: 'Equipos Directivos y Organizaciones',
+        title: 'Asesoramiento y acompañamiento institucional',
+        desc: 'Acompañamiento cercano para fortalecer la conducción escolar, la organización de equipos y los proyectos institucionales.',
+        items: [
+          'Asesoramiento en gestión educativa.',
+          'Organización y coordinación de equipos de trabajo.',
+          'Fortalecimiento de vínculos institucionales.',
+          'Comunicación y resolución de conflictos.',
+          'Elaboración y acompañamiento de proyectos educativos y empresariales.'
+        ],
+        img: 'assets/auditorio-jornada.jpg',
+        cap: 'Jornada de capacitación institucional en Entre Ríos.'
+      },
+      gremial: {
+        meta: 'CGT Regional Villaguay · UDA',
+        title: 'Representación y formación gremial',
+        desc: 'Espacios colectivos para conocer derechos laborales, legislación docente y herramientas de participación y negociación.',
+        items: [
+          'Derechos y deberes de los trabajadores.',
+          'Legislación y normativa docente.',
+          'Participación y organización gremial.',
+          'Liderazgo y representación colectiva.',
+          'Comunicación y negociación.'
+        ],
+        img: 'assets/cgt-institucional.jpg',
+        cap: 'Encuentro intersindical junto a gremios de la CGT Regional Villaguay.'
+      },
+      equipos: {
+        meta: 'Psicología Social Aplicada',
+        title: 'Liderazgo, equipos y orientación psicosocial',
+        desc: 'Intervenciones dinámicas para transformar la convivencia grupal y consolidar acuerdos en contextos escolares o laborales.',
+        items: [
+          'Lectura de dinámicas grupales y roles institucionales.',
+          'Dispositivos vivenciales de red vincular.',
+          'Desarrollo de liderazgos colaborativos y escucha activa.'
+        ],
+        img: 'assets/red-vinculos-patio.jpg',
+        cap: 'Dinámica de red vincular con hilo en patio escolar.'
+      }
+    };
+
+    const sheetEl = document.getElementById('chapterSheet');
+    const btns = document.querySelectorAll('.chapter-btn');
+
+    function renderSheet(key) {
+      const s = SHEETS[key];
+      sheetEl.innerHTML = `
+        <div class="sheet-copy">
+          <div class="sheet-meta">${s.meta}</div>
+          <h3>${s.title}</h3>
+          <p>${s.desc}</p>
+          <ul class="sheet-list">
+            ${s.items.map((it) => `<li>${it}</li>`).join('')}
+          </ul>
+        </div>
+        <div class="sheet-bleed-photo">
+          <img src="${s.img}" alt="${s.title}" style="${key === 'gremial' ? 'object-position: center 20%;' : ''}" />
+          <div class="sheet-photo-cap">${s.cap}</div>
+        </div>
+      `;
+    }
+
+    btns.forEach((b) => {
+      b.addEventListener('click', () => {
+        btns.forEach((x) => x.classList.remove('is-active'));
+        b.classList.add('is-active');
+        renderSheet(b.dataset.sheet);
+      });
+    });
+
+    renderSheet('talleres');
+
+    document.getElementById('dForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('dName').value.trim();
+      const topic = document.getElementById('dTopic').value;
+      const box = document.getElementById('dMsgBox');
+      box.style.display = 'block';
+      box.innerHTML = `<strong>Consulta lista (${name}):</strong> “${topic}”. Al sumar su WhatsApp o correo oficial quedará conectada de forma directa.`;
+    });
+  </script>
+  <script src="assets/editorial-motion.js"></script>
+</body>
+</html>

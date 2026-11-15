@@ -1,0 +1,153 @@
+/* Sistema compartido de movimiento editorial sobrio — Yolanda María Verbauwede */
+:root {
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Barra superior sutil de progreso de lectura */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2.5px;
+  background-color: #C86D51;
+  transform-origin: left center;
+  transform: scaleX(0);
+  z-index: 120;
+  pointer-events: none;
+  will-change: transform;
+}
+
+/* Mejora progresiva segura: solo oculta previo a revelar si JS está activo */
+html.js-motion .reveal-hero,
+html.js-motion .reveal-item {
+  opacity: 0;
+  transform: translateY(15px);
+  transition:
+    opacity 0.68s var(--ease-editorial) var(--reveal-delay, 0ms),
+    transform 0.68s var(--ease-editorial) var(--reveal-delay, 0ms);
+}
+
+html.js-motion .reveal-portrait {
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity 0.78s var(--ease-editorial) var(--reveal-delay, 120ms),
+    transform 0.78s var(--ease-editorial) var(--reveal-delay, 120ms);
+}
+
+html.js-motion .reveal-hero.is-in,
+html.js-motion .reveal-item.is-in,
+html.js-motion .reveal-portrait.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* Transición fluida al alternar pestañas o abrir capítulos */
+@keyframes editorialPanelIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.panel-enter,
+.chapter-row.is-open .chapter-panel,
+.ledger-row.is-open .ledger-panel-grid {
+  animation: editorialPanelIn 0.38s var(--ease-editorial) both;
+}
+
+/* Sección activa en navegaciones superiores */
+.nav-menu a.is-current:not(.nav-btn),
+.nav-links a.is-current:not(.nav-cta),
+.e-nav a.is-current:not(.e-nav-cta) {
+  color: var(--terracotta, #C86D51);
+}
+
+.topbar-nav a.is-current:not(.cta-cell) {
+  background-color: var(--mist, #EEF2F6);
+  color: var(--navy, #1B365D);
+}
+
+/* Micro-interacciones cuidadas en botones y fotografías contenidas */
+.btn-terracotta,
+.btn-editorial,
+.btn-solid,
+.btn-primary,
+.spine-cta,
+.ledger-cta,
+.swiss-submit,
+.btn-submit {
+  transition:
+    background-color 0.22s ease,
+    border-color 0.22s ease,
+    color 0.22s ease,
+    transform 0.28s var(--ease-editorial);
+}
+
+.btn-terracotta:hover,
+.btn-editorial:hover,
+.btn-solid:hover,
+.btn-primary:hover,
+.ledger-cta:hover,
+.swiss-submit:hover,
+.btn-submit:hover {
+  transform: translateY(-1px);
+}
+
+.triptych-panel,
+.diptych-item,
+.sheet-bleed-photo,
+.stage-visual {
+  overflow: hidden;
+}
+
+.triptych-panel img,
+.diptych-item img,
+.sheet-bleed-photo img {
+  transition: transform 0.72s var(--ease-editorial);
+}
+
+.triptych-panel:hover img,
+.diptych-item:hover img {
+  transform: scale(1.028);
+}
+
+.frieze-item img,
+.photo-card img {
+  transition: filter 0.32s var(--ease-editorial), opacity 0.32s var(--ease-editorial);
+}
+
+.frieze-item:hover img,
+.photo-card:hover img {
+  filter: contrast(1.03);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-progress {
+    display: none;
+  }
+
+  html.js-motion .reveal-hero,
+  html.js-motion .reveal-item,
+  html.js-motion .reveal-portrait {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .panel-enter,
+  .chapter-row.is-open .chapter-panel,
+  .ledger-row.is-open .ledger-panel-grid {
+    animation: none !important;
+  }
+
+  .triptych-panel:hover img,
+  .diptych-item:hover img {
+    transform: none !important;
+  }
+}
