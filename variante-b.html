@@ -89,15 +89,6 @@
       border-right: 1px solid var(--rule);
     }
 
-    .brand-code {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
-      padding: 0.2rem 0.45rem;
-      background-color: var(--navy);
-      color: var(--ivory);
-    }
-
     .brand-name {
       font-family: var(--font-head);
       font-size: 0.92rem;
@@ -116,10 +107,10 @@
       display: flex;
       align-items: center;
       padding: 0 1.35rem;
-      font-family: var(--font-mono);
-      font-size: 0.76rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
       color: var(--ink);
       border-left: 1px solid var(--rule);
       transition: background-color 0.2s ease, color 0.2s ease;
@@ -134,7 +125,7 @@
       background-color: var(--terracotta);
       color: #FFFFFF;
       border-left-color: var(--terracotta);
-      font-weight: 500;
+      font-weight: 600;
     }
 
     .topbar-nav a.cta-cell:hover {
@@ -148,9 +139,9 @@
       color: var(--ivory);
       border: none;
       padding: 0 1.25rem;
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      text-transform: uppercase;
+      font-family: var(--font-body);
+      font-size: 0.86rem;
+      font-weight: 600;
       cursor: pointer;
     }
 
@@ -172,10 +163,10 @@
     }
 
     .hero-eyebrow {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
+      font-family: var(--font-body);
+      font-size: 0.84rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
       color: #E8A690;
       display: flex;
       justify-content: space-between;
@@ -224,10 +215,10 @@
       background-color: var(--terracotta);
       color: #FFFFFF;
       padding: 0.9rem 1.6rem;
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
       border: 1px solid var(--terracotta);
       transition: background-color 0.2s ease;
     }
@@ -240,10 +231,10 @@
       background-color: transparent;
       color: var(--ivory);
       padding: 0.9rem 1.5rem;
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
       border: 1px solid rgba(250, 248, 245, 0.42);
       transition: background-color 0.2s ease;
     }
@@ -260,22 +251,13 @@
     }
 
     .portrait-cell {
-      padding: 1.25rem 1.5rem 0;
+      padding: 1.75rem 1.5rem 0;
       flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: stretch;
       background-color: var(--sand);
-    }
-
-    .portrait-label {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--slate-blue);
-      margin-bottom: 0.75rem;
     }
 
     .portrait-cell img {
@@ -294,16 +276,16 @@
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 1rem;
-      font-family: var(--font-mono);
-      font-size: 0.74rem;
+      font-family: var(--font-body);
+      font-size: 0.84rem;
     }
 
     .portrait-meta-bar span {
       display: block;
       color: var(--ink-muted);
-      text-transform: uppercase;
-      font-size: 0.66rem;
-      letter-spacing: 0.08em;
+      font-size: 0.74rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
     }
 
     .portrait-meta-bar strong {
@@ -328,25 +310,17 @@
       border-right: none;
     }
 
-    .axis-num {
-      font-family: var(--font-mono);
-      font-size: 0.74rem;
-      color: var(--terracotta);
-      margin-bottom: 0.45rem;
-    }
-
     .axis-label {
       font-family: var(--font-head);
-      font-size: 0.92rem;
+      font-size: 0.96rem;
       font-weight: 700;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
+      letter-spacing: 0.02em;
       color: var(--navy);
-      margin: 0 0 0.35rem;
+      margin: 0 0 0.45rem;
     }
 
     .axis-copy {
-      font-size: 0.86rem;
+      font-size: 0.88rem;
       color: var(--ink-muted);
       margin: 0;
     }
@@ -362,10 +336,10 @@
     .module-tag {
       padding: 1.4rem 1.5rem;
       border-right: 1px solid var(--rule);
-      font-family: var(--font-mono);
-      font-size: 0.76rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      font-family: var(--font-head);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
       color: var(--navy);
       display: flex;
       align-items: center;
@@ -390,12 +364,12 @@
     }
 
     .module-note {
-      font-family: var(--font-mono);
-      font-size: 0.74rem;
+      font-family: var(--font-body);
+      font-size: 0.86rem;
       color: var(--ink-muted);
     }
 
-    /* Matriz Interactiva de Servicios */
+    /* Propuesta de Servicios */
     .matrix-layout {
       display: grid;
       grid-template-columns: minmax(280px, 4fr) minmax(0, 8fr);
@@ -418,10 +392,7 @@
       border-left: 4px solid transparent;
       padding: 1.3rem 1.4rem;
       cursor: pointer;
-      display: grid;
-      grid-template-columns: 42px minmax(0, 1fr);
-      gap: 0.75rem;
-      align-items: start;
+      display: block;
       transition: background-color 0.15s ease, border-left-color 0.15s ease;
     }
 
@@ -438,13 +409,6 @@
       border-left-color: var(--terracotta);
     }
 
-    .rail-tab-idx {
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      color: var(--terracotta);
-      padding-top: 2px;
-    }
-
     .rail-tab-title {
       font-family: var(--font-head);
       font-size: 0.96rem;
@@ -455,7 +419,8 @@
     }
 
     .rail-tab-sub {
-      font-size: 0.82rem;
+      display: block;
+      font-size: 0.84rem;
       color: var(--ink-muted);
       display: block;
     }
@@ -477,11 +442,11 @@
     }
 
     .meta-tag {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      padding: 0.3rem 0.6rem;
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      padding: 0.3rem 0.65rem;
       border: 1px solid var(--rule-strong);
       color: var(--navy);
       background-color: var(--mist);
@@ -501,10 +466,10 @@
     }
 
     .stage-list-head {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      font-family: var(--font-head);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
       color: var(--terracotta);
       border-top: 1px solid var(--rule);
       padding-top: 1rem;
@@ -549,8 +514,8 @@
     .stage-visual-caption {
       padding: 0.85rem 1rem;
       border-top: 1px solid var(--rule);
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
+      font-family: var(--font-body);
+      font-size: 0.82rem;
       color: var(--ink-muted);
     }
 
@@ -576,11 +541,12 @@
     }
 
     .inst-code {
-      font-family: var(--font-mono);
-      font-size: 0.74rem;
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 600;
       color: #E8A690;
-      letter-spacing: 0.08em;
-      margin-bottom: 0.85rem;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.75rem;
     }
 
     .inst-title {
@@ -597,7 +563,7 @@
       margin: 0;
     }
 
-    /* Grilla Académica 01 - 11 */
+    /* Grilla Académica */
     .degrees-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -608,10 +574,7 @@
       padding: 1.15rem 1.5rem;
       border-bottom: 1px solid var(--rule);
       border-right: 1px solid var(--rule);
-      display: grid;
-      grid-template-columns: 44px minmax(0, 1fr);
-      gap: 0.85rem;
-      align-items: baseline;
+      display: block;
       background-color: var(--ivory);
     }
 
@@ -624,13 +587,6 @@
       border-right: none;
     }
 
-    .degree-num {
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      color: var(--terracotta);
-      font-weight: 500;
-    }
-
     .degree-name {
       font-size: 0.96rem;
       color: var(--ink);
@@ -639,12 +595,12 @@
 
     .degree-cat {
       display: block;
-      font-family: var(--font-mono);
-      font-size: 0.68rem;
-      text-transform: uppercase;
-      letter-spacing: 0.07em;
+      font-family: var(--font-body);
+      font-size: 0.76rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
       color: var(--slate-blue);
-      margin-top: 0.2rem;
+      margin-top: 0.25rem;
     }
 
     /* Mosaico Documental */
@@ -677,10 +633,10 @@
     }
 
     .mosaic-tag {
-      font-family: var(--font-mono);
-      font-size: 0.68rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      font-family: var(--font-body);
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
       color: var(--terracotta);
       margin-bottom: 0.3rem;
     }
@@ -730,9 +686,9 @@
     }
 
     .data-row span {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      text-transform: uppercase;
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 600;
       color: var(--slate-blue);
     }
 
@@ -755,10 +711,9 @@
 
     .swiss-field label {
       display: block;
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      font-family: var(--font-body);
+      font-size: 0.84rem;
+      font-weight: 600;
       color: var(--navy);
       margin-bottom: 0.35rem;
     }
@@ -788,10 +743,10 @@
       color: #FFFFFF;
       border: 1px solid var(--navy);
       padding: 0.9rem 1.8rem;
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
       cursor: pointer;
       transition: background-color 0.2s ease;
     }
@@ -817,9 +772,9 @@
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 1rem;
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      letter-spacing: 0.05em;
+      font-family: var(--font-body);
+      font-size: 0.84rem;
+      letter-spacing: 0.01em;
     }
 
     @media (max-width: 1020px) {
@@ -896,7 +851,6 @@
   <div class="grid-shell">
     <header class="topbar">
       <div class="topbar-brand">
-        <span class="brand-code">YMV</span>
         <a href="#top" class="brand-name">Yolanda María Verbauwede</a>
       </div>
       <button class="mobile-btn" id="mobileBtn" type="button" aria-expanded="false">Menú</button>
@@ -904,7 +858,7 @@
         <a href="#servicios">Servicios</a>
         <a href="#trayectoria">Trayectoria</a>
         <a href="#formacion">Formación</a>
-        <a href="#territorio">Registros</a>
+        <a href="#territorio">En territorio</a>
         <a href="#contacto" class="cta-cell">Contacto</a>
       </nav>
     </header>
@@ -915,11 +869,11 @@
         <div class="hero-left">
           <div>
             <div class="hero-eyebrow">
-              <span>Villaguay · Entre Ríos</span>
-              <span>[ Perfil Profesional ]</span>
+              <span>Villaguay, Entre Ríos</span>
+              <span>Presencial y virtual</span>
             </div>
             <h1 class="hero-headline">
-              Conducción educativa, <em>vínculos grupales</em> y representación social.
+              Conducción educativa, vínculos grupales y representación social.
             </h1>
             <div class="hero-rule-accent"></div>
             <p class="hero-desc">
@@ -928,13 +882,12 @@
           </div>
           <div class="hero-btn-row">
             <a href="#contacto" class="btn-solid">Coordinar consulta</a>
-            <a href="#servicios" class="btn-outline-light">Explorar matriz de talleres</a>
+            <a href="#servicios" class="btn-outline-light">Ver áreas de trabajo</a>
           </div>
         </div>
 
         <div class="hero-right">
           <div class="portrait-cell">
-            <div class="portrait-label">[ FIG. 01 · DIRECCIÓN Y GESTIÓN ]</div>
             <img src="assets/retrato-papel.jpg" alt="Yolanda María Verbauwede" />
           </div>
           <div class="portrait-meta-bar">
@@ -950,36 +903,32 @@
         </div>
       </section>
 
-      <!-- Barra de 4 Ejes -->
+      <!-- Cuatro Ejes -->
       <section class="axes-strip" aria-label="Cuatro ejes de ejercicio profesional">
         <article class="axis-cell">
-          <div class="axis-num">[ 01 ]</div>
           <h2 class="axis-label">Educación</h2>
           <p class="axis-copy">Gestión pedagógica, administración escolar, normativa SAGE y formación docente continua.</p>
         </article>
         <article class="axis-cell">
-          <div class="axis-num">[ 02 ]</div>
           <h2 class="axis-label">Gestión Institucional</h2>
           <p class="axis-copy">Coordinación de equipos de trabajo, diseño de proyectos y resolución de conflictos.</p>
         </article>
         <article class="axis-cell">
-          <div class="axis-num">[ 03 ]</div>
           <h2 class="axis-label">Psicología Social</h2>
           <p class="axis-copy">Comprensión de procesos grupales, roles, vínculos, Counseling y educación emocional.</p>
         </article>
         <article class="axis-cell">
-          <div class="axis-num">[ 04 ]</div>
           <h2 class="axis-label">Representación Gremial</h2>
           <p class="axis-copy">Defensa de los derechos laborales, legislación docente, negociación y liderazgo colectivo.</p>
         </article>
       </section>
 
-      <!-- Matriz Interactiva de Servicios -->
+      <!-- Servicios -->
       <section id="servicios">
         <div class="module-head">
-          <div class="module-tag">[ 01 / Servicios ]</div>
+          <div class="module-tag">Servicios</div>
           <div class="module-title-wrap">
-            <h2 class="module-title">Matriz de servicios, mentorías y talleres</h2>
+            <h2 class="module-title">Talleres, mentorías y asesoramiento</h2>
             <span class="module-note">Modalidad presencial y virtual</span>
           </div>
         </div>
@@ -987,39 +936,24 @@
         <div class="matrix-layout">
           <div class="matrix-rail" role="tablist" aria-label="Categorías de servicios">
             <button class="rail-tab is-active" type="button" data-tab="capacitaciones">
-              <span class="rail-tab-idx">01</span>
-              <span>
-                <span class="rail-tab-title">Capacitaciones y talleres</span>
-                <span class="rail-tab-sub">8 ejes temáticos para docentes, equipos y empresas</span>
-              </span>
+              <span class="rail-tab-title">Capacitaciones y talleres</span>
+              <span class="rail-tab-sub">Para docentes, equipos directivos y empresas</span>
             </button>
             <button class="rail-tab" type="button" data-tab="mentorias">
-              <span class="rail-tab-idx">02</span>
-              <span>
-                <span class="rail-tab-title">Mentorías individuales y grupales</span>
-                <span class="rail-tab-sub">Psicología Social, liderazgo femenino y desarrollo personal</span>
-              </span>
+              <span class="rail-tab-title">Mentorías individuales y grupales</span>
+              <span class="rail-tab-sub">Psicología Social, liderazgo femenino y desarrollo personal</span>
             </button>
             <button class="rail-tab" type="button" data-tab="asesoramiento">
-              <span class="rail-tab-idx">03</span>
-              <span>
-                <span class="rail-tab-title">Asesoramiento en gestión</span>
-                <span class="rail-tab-sub">Conducción institucional, equipos y proyectos</span>
-              </span>
+              <span class="rail-tab-title">Asesoramiento en gestión</span>
+              <span class="rail-tab-sub">Conducción institucional, equipos y proyectos</span>
             </button>
             <button class="rail-tab" type="button" data-tab="gremial">
-              <span class="rail-tab-idx">04</span>
-              <span>
-                <span class="rail-tab-title">Formación gremial</span>
-                <span class="rail-tab-sub">Normativa laboral, derechos y negociación colectiva</span>
-              </span>
+              <span class="rail-tab-title">Formación gremial</span>
+              <span class="rail-tab-sub">Normativa laboral, derechos y negociación colectiva</span>
             </button>
             <button class="rail-tab" type="button" data-tab="psicosocial">
-              <span class="rail-tab-idx">05</span>
-              <span>
-                <span class="rail-tab-title">Orientación y liderazgo de equipos</span>
-                <span class="rail-tab-sub">Acompañamiento psicosocial y convivencia grupal</span>
-              </span>
+              <span class="rail-tab-title">Orientación y liderazgo de equipos</span>
+              <span class="rail-tab-sub">Acompañamiento psicosocial y convivencia grupal</span>
             </button>
           </div>
 
@@ -1030,27 +964,27 @@
       <!-- Banda Institucional Trayectoria -->
       <section id="trayectoria">
         <div class="module-head">
-          <div class="module-tag">[ 02 / Trayectoria ]</div>
+          <div class="module-tag">Trayectoria</div>
           <div class="module-title-wrap">
             <h2 class="module-title">Experiencia en conducción y territorio</h2>
-            <span class="module-note">Tres pilares: educación · compromiso social · derechos laborales</span>
+            <span class="module-note">Educación · Compromiso social · Derechos laborales</span>
           </div>
         </div>
 
         <div class="institutional-band">
           <div class="institutional-grid">
             <article class="inst-cell">
-              <div class="inst-code">GESTIÓN EDUCATIVA</div>
+              <div class="inst-code">Gestión educativa</div>
               <h3 class="inst-title">Conducción escolar integral</h3>
               <p class="inst-copy">Directora de institución educativa. Trayectoria previa como secretaria y vicedirectora, respaldada por antecedentes de oposición aprobados.</p>
             </article>
             <article class="inst-cell">
-              <div class="inst-code">CGE · 2021 — 2023</div>
-              <h3 class="inst-title">Programa Presentes</h3>
+              <div class="inst-code">Programa Presentes · CGE (2021–2023)</div>
+              <h3 class="inst-title">Articulación departamental</h3>
               <p class="inst-copy">Coordinación departamental del Programa Presentes del Consejo General de Educación durante 2021, 2022 y 2023, articulando proyectos educativos y comunitarios.</p>
             </article>
             <article class="inst-cell">
-              <div class="inst-code">CGT VILLAGUAY · UDA</div>
+              <div class="inst-code">CGT Regional Villaguay · UDA</div>
               <h3 class="inst-title">Representación colectiva</h3>
               <p class="inst-copy">Secretaria General de la CGT Regional Villaguay y referente del gremio UDA, generando instancias de formación y defensa de los trabajadores.</p>
             </article>
@@ -1061,67 +995,56 @@
       <!-- Formación Académica -->
       <section id="formacion">
         <div class="module-head">
-          <div class="module-tag">[ 03 / Credenciales ]</div>
+          <div class="module-tag">Formación</div>
           <div class="module-title-wrap">
             <h2 class="module-title">Formación académica y actualización permanente</h2>
-            <span class="module-note">11 titulaciones, tecnicaturas y diplomaturas</span>
+            <span class="module-note">Posgrado, grado, tecnicaturas y diplomaturas</span>
           </div>
         </div>
 
         <div class="degrees-grid">
           <div class="degree-cell">
-            <span class="degree-num">01</span>
             <div class="degree-name">Maestría en Gestión y Asesoramiento Pedagógico de las Organizaciones Educativas<span class="degree-cat">Posgrado</span></div>
           </div>
           <div class="degree-cell">
-            <span class="degree-num">02</span>
             <div class="degree-name">Licenciatura en Gestión y Asesoramiento de las Instituciones Educativas<span class="degree-cat">Grado Universitario</span></div>
           </div>
           <div class="degree-cell">
-            <span class="degree-num">03</span>
             <div class="degree-name">Profesorado de Primer y Segundo Ciclo de la EGB<span class="degree-cat">Formación Docente Base</span></div>
           </div>
           <div class="degree-cell">
-            <span class="degree-num">04</span>
             <div class="degree-name">Técnica Superior Operadora en Psicología Social<span class="degree-cat">Tecnicatura Superior</span></div>
           </div>
           <div class="degree-cell">
-            <span class="degree-num">05</span>
             <div class="degree-name">Tecnicatura en Orientación del Desarrollo Personal – Counseling<span class="degree-cat">Tecnicatura</span></div>
           </div>
           <div class="degree-cell">
-            <span class="degree-num">06</span>
             <div class="degree-name">Diplomatura en Educación Emocional<span class="degree-cat">Diplomatura</span></div>
           </div>
           <div class="degree-cell">
-            <span class="degree-num">07</span>
             <div class="degree-name">Diplomatura en Neurociencia y Educación<span class="degree-cat">Diplomatura</span></div>
           </div>
           <div class="degree-cell">
-            <span class="degree-num">08</span>
             <div class="degree-name">Diplomatura en Abordaje Integral del Consumo Problemático<span class="degree-cat">Diplomatura</span></div>
           </div>
           <div class="degree-cell">
-            <span class="degree-num">09</span>
             <div class="degree-name">Diplomatura en Educación en Valores<span class="degree-cat">Diplomatura</span></div>
           </div>
           <div class="degree-cell">
-            <span class="degree-num">10</span>
             <div class="degree-name">Diplomatura en Inteligencia Artificial para Docentes<span class="degree-cat">Diplomatura</span></div>
           </div>
           <div class="degree-cell">
-            <span class="degree-num">11</span>
             <div class="degree-name">Formación en Gestión Educativa, Investigación e Intervención Comunitaria<span class="degree-cat">Especialización Territorial</span></div>
           </div>
         </div>
       </section>
 
-      <!-- Registros en Territorio -->
+      <!-- En territorio -->
       <section id="territorio">
         <div class="module-head">
-          <div class="module-tag">[ 04 / Registros ]</div>
+          <div class="module-tag">En territorio</div>
           <div class="module-title-wrap">
-            <h2 class="module-title">Documentación de práctica en campo</h2>
+            <h2 class="module-title">Jornadas, talleres y vida institucional</h2>
             <span class="module-note">Escuelas · Capacitaciones · CGT</span>
           </div>
         </div>
@@ -1162,7 +1085,7 @@
       <section id="contacto" class="contact-cells">
         <div class="contact-info-cell">
           <div>
-            <span class="brand-code">[ 05 / Contacto ]</span>
+            <div class="mosaic-tag">Contacto</div>
             <h2>Iniciemos una conversación institucional o profesional.</h2>
             <p style="color: var(--ink-muted);">
               Consultas para dictado de talleres, asesoramiento a instituciones o empresas, mentorías individuales y formación gremial.
@@ -1210,10 +1133,10 @@
               </select>
             </div>
             <div class="swiss-field">
-              <label for="sMsg">Detalle de la solicitud</label>
+              <label for="sMsg">Mensaje</label>
               <textarea id="sMsg" rows="3" required placeholder="Indicá modalidad preferida, fechas tentativas o temática..."></textarea>
             </div>
-            <button type="submit" class="swiss-submit">Generar solicitud</button>
+            <button type="submit" class="swiss-submit">Enviar consulta</button>
             <div class="swiss-status" id="swissStatus"></div>
           </form>
         </div>
@@ -1221,8 +1144,8 @@
     </main>
 
     <footer class="bottom-bar">
-      <span>YOLANDA MARÍA VERBAUWEDE · EDUCACIÓN · GESTIÓN · PSICOLOGÍA SOCIAL · CGT VILLAGUAY</span>
-      <span>VILLAGUAY · ENTRE RÍOS · ARGENTINA</span>
+      <span>Yolanda María Verbauwede · Educación, Gestión y Psicología Social</span>
+      <span>Villaguay, Entre Ríos · Argentina</span>
     </footer>
   </div>
 

@@ -90,14 +90,6 @@
       flex-wrap: wrap;
     }
 
-    .monogram {
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      font-weight: 500;
-      letter-spacing: 0.12em;
-      color: var(--terracotta);
-    }
-
     .brand-title {
       font-family: var(--font-serif);
       font-size: 1.35rem;
@@ -107,10 +99,9 @@
     }
 
     .brand-loc {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      letter-spacing: 0.02em;
       color: var(--ink-muted);
       border-left: 1px solid var(--rule-strong);
       padding-left: 0.85rem;
@@ -137,10 +128,10 @@
       background-color: var(--navy);
       color: #FFFFFF;
       padding: 0.58rem 1.2rem;
-      font-family: var(--font-mono);
-      font-size: 0.76rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
       transition: background-color 0.2s ease;
     }
 
@@ -155,8 +146,9 @@
       border: 1px solid var(--navy);
       color: var(--navy);
       padding: 0.35rem 0.75rem;
-      font-family: var(--font-mono);
-      font-size: 0.74rem;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 600;
       text-transform: uppercase;
       cursor: pointer;
     }
@@ -182,9 +174,10 @@
     }
 
     .axes-mono {
-      font-family: var(--font-mono);
-      font-size: 0.74rem;
-      letter-spacing: 0.09em;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
       color: var(--terracotta);
       margin-bottom: 1.25rem;
@@ -235,10 +228,9 @@
     }
 
     .link-underline {
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      font-weight: 600;
       color: var(--navy);
       border-bottom: 1.5px solid var(--navy);
       padding-bottom: 3px;
@@ -255,30 +247,8 @@
       padding: clamp(1.5rem, 3vw, 2.5rem) 0 0 clamp(1.25rem, 3vw, 2.5rem);
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: stretch;
-    }
-
-    .side-dossier {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 1rem;
-      border-bottom: 1px solid var(--rule);
-      padding-bottom: 0.85rem;
-      margin-bottom: 1rem;
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      color: var(--ink-muted);
-    }
-
-    .side-dossier strong {
-      display: block;
-      color: var(--navy);
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      margin-bottom: 0.15rem;
     }
 
     .horizon-portrait {
@@ -316,9 +286,10 @@
     }
 
     .navy-kicker {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      letter-spacing: 0.09em;
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
       color: #E8A690;
       margin-bottom: 0.5rem;
@@ -356,9 +327,10 @@
     }
 
     .sec-label {
-      font-family: var(--font-mono);
-      font-size: 0.74rem;
-      letter-spacing: 0.1em;
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
       color: var(--terracotta);
       margin-bottom: 0.45rem;
@@ -406,9 +378,7 @@
       border: none;
       border-bottom: 1px solid var(--rule);
       padding: 1.15rem 0.9rem;
-      display: grid;
-      grid-template-columns: 36px minmax(0, 1fr);
-      gap: 0.75rem;
+      display: block;
       cursor: pointer;
       transition: background-color 0.15s ease, padding-left 0.15s ease;
     }
@@ -421,13 +391,6 @@
       background-color: var(--sand);
       border-left: 3px solid var(--terracotta);
       padding-left: 1.1rem;
-    }
-
-    .chapter-idx {
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
-      color: var(--terracotta);
-      padding-top: 3px;
     }
 
     .chapter-btn strong {
@@ -459,9 +422,10 @@
     }
 
     .sheet-meta {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
       color: var(--slate-blue);
       margin-bottom: 0.6rem;
@@ -525,11 +489,11 @@
       background: linear-gradient(180deg, transparent 0%, rgba(16, 35, 63, 0.88) 100%);
       color: #FFFFFF;
       padding: 2rem 1.1rem 0.9rem;
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
     }
 
-    /* Pliego Académico de 11 Credenciales */
+    /* Pliego Académico */
     .quote-ribbon {
       background-color: var(--sand);
       padding: 1.85rem clamp(1.5rem, 3vw, 2.5rem);
@@ -553,8 +517,8 @@
     }
 
     .quote-ribbon span {
-      font-family: var(--font-mono);
-      font-size: 0.74rem;
+      font-family: var(--font-sans);
+      font-size: 0.86rem;
       color: var(--ink-muted);
       max-width: 34ch;
     }
@@ -566,9 +530,10 @@
     }
 
     .acad-block h3 {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      letter-spacing: 0.09em;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
       color: var(--slate-blue);
       border-bottom: 2px solid var(--navy);
@@ -583,19 +548,10 @@
     }
 
     .acad-items li {
-      padding: 0.65rem 0;
+      display: block;
+      padding: 0.7rem 0;
       border-bottom: 1px solid var(--rule);
-      display: grid;
-      grid-template-columns: 34px minmax(0, 1fr);
-      gap: 0.6rem;
-      align-items: baseline;
       font-size: 0.96rem;
-    }
-
-    .acad-items li span {
-      font-family: var(--font-mono);
-      font-size: 0.74rem;
-      color: var(--terracotta);
     }
 
     /* Díptico Fotográfico de Territorio a Sangre */
@@ -632,10 +588,10 @@
 
     .diptych-caption strong {
       display: block;
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
       color: #E8A690;
       margin-bottom: 0.2rem;
     }
@@ -695,9 +651,10 @@
 
     .contact-line span {
       display: block;
-      font-family: var(--font-mono);
-      font-size: 0.68rem;
-      letter-spacing: 0.09em;
+      font-family: var(--font-sans);
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
       color: #E8A690;
     }
@@ -722,10 +679,10 @@
 
     .f-group label {
       display: block;
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
       color: var(--navy);
       margin-bottom: 0.35rem;
     }
@@ -762,8 +719,8 @@
       background-color: #0B192E;
       color: rgba(250, 248, 245, 0.72);
       padding: 1.3rem 0;
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
     }
 
     .footer-flex {
@@ -841,7 +798,6 @@
   <header class="header-bar">
     <div class="container header-inner">
       <div class="brand-lockup">
-        <span class="monogram">YMV</span>
         <a href="#inicio" class="brand-title">Yolanda María Verbauwede</a>
         <span class="brand-loc">Villaguay · Entre Ríos</span>
       </div>
@@ -869,21 +825,11 @@
           </p>
           <div class="horizon-actions">
             <a href="#contacto" class="btn-terracotta">Coordinar mentoría o taller</a>
-            <a href="#practica" class="link-underline">Recorrer áreas de práctica</a>
+            <a href="#practica" class="link-underline">Ver propuestas de trabajo</a>
           </div>
         </div>
 
         <div class="hero-right-band">
-          <div class="side-dossier">
-            <div>
-              <strong>Dirección y Psicología Social</strong>
-              <span>Escuelas, equipos y organizaciones</span>
-            </div>
-            <div>
-              <strong>Modalidad</strong>
-              <span>Presencial · Virtual</span>
-            </div>
-          </div>
           <img class="horizon-portrait" src="assets/retrato-papel.jpg" alt="Yolanda María Verbauwede" />
         </div>
       </div>
@@ -893,17 +839,17 @@
     <section class="navy-strip" aria-label="Pilares de trayectoria">
       <div class="container navy-cols">
         <article class="navy-col">
-          <div class="navy-kicker">01 · Conducción Escolar</div>
+          <div class="navy-kicker">Conducción escolar</div>
           <h2>Oposición aprobada y gestión integral</h2>
           <p>Directora de institución educativa con recorrido previo como secretaria y vicedirectora, uniendo liderazgo pedagógico y administración.</p>
         </article>
         <article class="navy-col">
-          <div class="navy-kicker">02 · Territorio CGE (2021–2023)</div>
-          <h2>Programa Presentes</h2>
+          <div class="navy-kicker">Programa Presentes · CGE (2021–2023)</div>
+          <h2>Trabajo territorial y comunitario</h2>
           <p>Coordinación departamental durante 2021, 2022 y 2023 en proyectos educativos y comunitarios del Consejo General de Educación.</p>
         </article>
         <article class="navy-col">
-          <div class="navy-kicker">03 · CGT Regional Villaguay · UDA</div>
+          <div class="navy-kicker">CGT Regional Villaguay · UDA</div>
           <h2>Representación y derechos laborales</h2>
           <p>Secretaria General de la CGT Regional Villaguay y referente de UDA, impulsando espacios de formación gremial y negociación colectiva.</p>
         </article>
@@ -915,8 +861,8 @@
       <div class="container">
         <div class="sec-head">
           <div>
-            <div class="sec-label">§ 02 — Servicios Profesionales</div>
-            <h2 class="sec-title">Espacios de <em>acompañamiento, formación y gestión</em></h2>
+            <div class="sec-label">Áreas de trabajo</div>
+            <h2 class="sec-title">Espacios de acompañamiento, formación y gestión</h2>
           </div>
           <p class="sec-sub">
             Propuestas diseñadas para personas, mujeres, docentes, equipos directivos, empresas y organizaciones sindicales.
@@ -926,39 +872,24 @@
         <div class="practice-split">
           <div class="chapter-nav" role="tablist" aria-label="Capítulos de servicios">
             <button class="chapter-btn is-active" type="button" data-sheet="talleres">
-              <span class="chapter-idx">01</span>
-              <span>
-                <strong>Capacitaciones y talleres</strong>
-                <span class="sub">SAGE, IA en educación, liderazgo y emoción</span>
-              </span>
+              <strong>Capacitaciones y talleres</strong>
+              <span class="sub">SAGE, IA en educación, liderazgo y emoción</span>
             </button>
             <button class="chapter-btn" type="button" data-sheet="mentorias">
-              <span class="chapter-idx">02</span>
-              <span>
-                <strong>Mentorías y desarrollo personal</strong>
-                <span class="sub">Psicología Social, mujeres y acompañamiento</span>
-              </span>
+              <strong>Mentorías y desarrollo personal</strong>
+              <span class="sub">Psicología Social, mujeres y acompañamiento</span>
             </button>
             <button class="chapter-btn" type="button" data-sheet="institucional">
-              <span class="chapter-idx">03</span>
-              <span>
-                <strong>Asesoramiento institucional</strong>
-                <span class="sub">Gestión educativa, proyectos y empresas</span>
-              </span>
+              <strong>Asesoramiento institucional</strong>
+              <span class="sub">Gestión educativa, proyectos y empresas</span>
             </button>
             <button class="chapter-btn" type="button" data-sheet="gremial">
-              <span class="chapter-idx">04</span>
-              <span>
-                <strong>Formación y representación gremial</strong>
-                <span class="sub">Derechos laborales, normativa docente y negociación</span>
-              </span>
+              <strong>Formación y representación gremial</strong>
+              <span class="sub">Derechos laborales, normativa docente y negociación</span>
             </button>
             <button class="chapter-btn" type="button" data-sheet="equipos">
-              <span class="chapter-idx">05</span>
-              <span>
-                <strong>Liderazgo y orientación psicosocial</strong>
-                <span class="sub">Vínculos grupales y resolución de conflictos</span>
-              </span>
+              <strong>Liderazgo y orientación psicosocial</strong>
+              <span class="sub">Vínculos grupales y resolución de conflictos</span>
             </button>
           </div>
 
@@ -972,11 +903,11 @@
       <div class="container">
         <div class="sec-head">
           <div>
-            <div class="sec-label">§ 03 — Formación Académica</div>
-            <h2 class="sec-title">Actualización continua en <em>gestión y vínculos</em></h2>
+            <div class="sec-label">Formación académica</div>
+            <h2 class="sec-title">Formación universitaria y actualización continua</h2>
           </div>
           <p class="sec-sub">
-            Once titulaciones universitarias, tecnicaturas superiores y diplomaturas orientadas a la comprensión de las personas y las organizaciones.
+            Titulaciones universitarias, tecnicaturas superiores y diplomaturas orientadas a la comprensión de las personas y las organizaciones.
           </p>
         </div>
 
@@ -993,23 +924,23 @@
           <div class="acad-block">
             <h3>Posgrado, Grado y Tecnicaturas</h3>
             <ul class="acad-items">
-              <li><span>01</span> Maestría en Gestión y Asesoramiento Pedagógico de las Organizaciones Educativas.</li>
-              <li><span>02</span> Licenciatura en Gestión y Asesoramiento de las Instituciones Educativas.</li>
-              <li><span>03</span> Profesorado de Primer y Segundo Ciclo de la EGB.</li>
-              <li><span>04</span> Técnica Superior Operadora en Psicología Social.</li>
-              <li><span>05</span> Tecnicatura en Orientación del Desarrollo Personal – Counseling.</li>
+              <li>Maestría en Gestión y Asesoramiento Pedagógico de las Organizaciones Educativas.</li>
+              <li>Licenciatura en Gestión y Asesoramiento de las Instituciones Educativas.</li>
+              <li>Profesorado de Primer y Segundo Ciclo de la EGB.</li>
+              <li>Técnica Superior Operadora en Psicología Social.</li>
+              <li>Tecnicatura en Orientación del Desarrollo Personal – Counseling.</li>
             </ul>
           </div>
 
           <div class="acad-block">
             <h3>Diplomaturas y Especializaciones</h3>
             <ul class="acad-items">
-              <li><span>06</span> Diplomatura en Educación Emocional.</li>
-              <li><span>07</span> Diplomatura en Neurociencia y Educación.</li>
-              <li><span>08</span> Diplomatura en Abordaje Integral del Consumo Problemático.</li>
-              <li><span>09</span> Diplomatura en Educación en Valores.</li>
-              <li><span>10</span> Diplomatura en Inteligencia Artificial para Docentes.</li>
-              <li><span>11</span> Formación en Gestión Educativa, Investigación e Intervención Comunitaria.</li>
+              <li>Diplomatura en Educación Emocional.</li>
+              <li>Diplomatura en Neurociencia y Educación.</li>
+              <li>Diplomatura en Abordaje Integral del Consumo Problemático.</li>
+              <li>Diplomatura en Educación en Valores.</li>
+              <li>Diplomatura en Inteligencia Artificial para Docentes.</li>
+              <li>Formación en Gestión Educativa, Investigación e Intervención Comunitaria.</li>
             </ul>
           </div>
         </div>
@@ -1021,8 +952,8 @@
       <div class="container">
         <div class="sec-head">
           <div>
-            <div class="sec-label">§ 04 — En Territorio</div>
-            <h2 class="sec-title">Práctica viva en <em>escuelas, talleres y gremios</em></h2>
+            <div class="sec-label">En territorio</div>
+            <h2 class="sec-title">Escuelas, talleres y espacios gremiales</h2>
           </div>
           <p class="sec-sub">
             Registros de dinámicas grupales, jornadas de formación docente y articulación regional.
@@ -1066,8 +997,8 @@
     <section id="contacto" class="contact-band">
       <div class="container contact-split">
         <div>
-          <div class="sec-label" style="color: #E8A690;">§ 05 — Contacto</div>
-          <h2>Armemos un espacio de <em>formación o consulta</em></h2>
+          <div class="sec-label" style="color: #E8A690;">Contacto</div>
+          <h2>Armemos un espacio de formación o consulta</h2>
           <p style="color: rgba(250, 248, 245, 0.86);">
             Consultas para mentorías individuales o grupales, talleres en instituciones educativas o empresas y formación gremial.
           </p>
@@ -1113,7 +1044,7 @@
             <label for="dMsg">Mensaje</label>
             <textarea id="dMsg" rows="3" required placeholder="Indicá modalidad presencial o virtual y el objetivo de tu consulta..."></textarea>
           </div>
-          <button type="submit" class="btn-terracotta" style="border: none; cursor: pointer;">Preparar consulta</button>
+          <button type="submit" class="btn-terracotta" style="border: none; cursor: pointer;">Enviar consulta</button>
           <div class="form-msg" id="dMsgBox"></div>
         </form>
       </div>

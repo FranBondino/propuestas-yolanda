@@ -89,10 +89,9 @@
       align-items: center;
       padding: 0.55rem 0;
       border-bottom: 1px solid var(--rule);
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      letter-spacing: 0.03em;
       color: var(--ink-muted);
     }
 
@@ -153,8 +152,9 @@
       border: 1px solid var(--rule-strong);
       color: var(--navy);
       padding: 0.35rem 0.7rem;
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 600;
       text-transform: uppercase;
       cursor: pointer;
     }
@@ -166,27 +166,10 @@
 
     .hero-folio {
       display: grid;
-      grid-template-columns: 34px minmax(0, 7fr) minmax(0, 5fr);
+      grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
       gap: clamp(1.5rem, 3vw, 3rem);
       align-items: end;
       padding-bottom: 0;
-    }
-
-    .marginal-note {
-      writing-mode: vertical-rl;
-      transform: rotate(180deg);
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--slate-blue);
-      border-left: 1px solid var(--rule);
-      padding-left: 0.6rem;
-      margin-bottom: clamp(2.5rem, 5vw, 4rem);
-      justify-self: start;
-      align-self: stretch;
-      display: flex;
-      align-items: flex-end;
     }
 
     .hero-copy {
@@ -196,9 +179,10 @@
     }
 
     .kicker {
-      font-family: var(--font-mono);
-      font-size: 0.76rem;
-      letter-spacing: 0.08em;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
       color: var(--terracotta);
       margin-bottom: 1.1rem;
@@ -252,10 +236,9 @@
     }
 
     .btn-link-subtle {
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      font-weight: 600;
       color: var(--navy);
       border-bottom: 1px solid var(--navy);
       padding-bottom: 3px;
@@ -275,22 +258,6 @@
       flex-direction: column;
       justify-content: flex-end;
       align-self: end;
-    }
-
-    .portrait-meta-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 0.75rem;
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      color: var(--ink-muted);
-      margin-bottom: 0.5rem;
-    }
-
-    .portrait-meta-top strong {
-      color: var(--navy);
-      font-weight: 500;
     }
 
     .portrait-editorial img {
@@ -318,14 +285,6 @@
     .pillar-item {
       border-left: 2px solid var(--terracotta);
       padding-left: 1.15rem;
-    }
-
-    .pillar-roman {
-      font-family: var(--font-display);
-      font-style: italic;
-      font-size: 1.1rem;
-      color: var(--terracotta);
-      margin-bottom: 0.2rem;
     }
 
     .pillar-title {
@@ -357,9 +316,10 @@
     }
 
     .section-index {
-      font-family: var(--font-mono);
-      font-size: 0.76rem;
-      letter-spacing: 0.1em;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
       color: var(--slate-blue);
     }
@@ -406,7 +366,7 @@
       text-align: left;
       padding: 1.45rem 1rem;
       display: grid;
-      grid-template-columns: 70px minmax(0, 1.4fr) minmax(0, 1fr) 44px;
+      grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr) 36px;
       gap: 1.25rem;
       align-items: center;
       cursor: pointer;
@@ -416,13 +376,6 @@
 
     .chapter-trigger:hover .chapter-name {
       color: var(--terracotta);
-    }
-
-    .chapter-num {
-      font-family: var(--font-mono);
-      font-size: 0.9rem;
-      color: var(--terracotta);
-      font-weight: 500;
     }
 
     .chapter-name {
@@ -439,15 +392,15 @@
     }
 
     .chapter-toggle-sign {
-      font-family: var(--font-mono);
-      font-size: 1.25rem;
+      font-family: var(--font-sans);
+      font-size: 1.3rem;
       color: var(--navy);
       text-align: right;
     }
 
     .chapter-panel {
       display: none;
-      padding: 0 1rem 1.85rem calc(70px + 2.25rem);
+      padding: 0 1rem 1.85rem 1rem;
     }
 
     .chapter-row.is-open .chapter-panel {
@@ -458,9 +411,10 @@
     }
 
     .chapter-list-title {
-      font-family: var(--font-mono);
-      font-size: 0.74rem;
-      letter-spacing: 0.08em;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
       color: var(--slate-blue);
       margin: 0 0 0.75rem;
@@ -503,8 +457,8 @@
 
     .chapter-figure figcaption {
       padding-top: 0.45rem;
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
       color: var(--ink-muted);
     }
 
@@ -546,9 +500,10 @@
     }
 
     .milestone-box h3 {
-      font-family: var(--font-mono);
-      font-size: 0.76rem;
-      letter-spacing: 0.09em;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
       color: var(--terracotta);
       margin: 0 0 1rem;
@@ -583,9 +538,10 @@
     }
 
     .degrees-group h4 {
-      font-family: var(--font-mono);
-      font-size: 0.74rem;
-      letter-spacing: 0.08em;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
       color: var(--slate-blue);
       border-bottom: 1px solid var(--rule-strong);
@@ -600,20 +556,11 @@
     }
 
     .degree-list li {
-      padding: 0.55rem 0;
-      border-bottom: 1px dashed var(--rule);
+      display: block;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--rule);
       font-size: 0.96rem;
       color: var(--ink);
-      display: flex;
-      gap: 0.75rem;
-      align-items: baseline;
-    }
-
-    .degree-list li span {
-      font-family: var(--font-mono);
-      font-size: 0.74rem;
-      color: var(--terracotta);
-      flex-shrink: 0;
     }
 
     /* Crónica de Territorio (Ensayo Fotográfico Asimétrico) */
@@ -644,10 +591,10 @@
 
     .photo-card figcaption strong {
       display: block;
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
       color: var(--navy);
       margin-bottom: 0.2rem;
     }
@@ -726,9 +673,10 @@
 
     .contact-meta div span {
       display: block;
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      letter-spacing: 0.1em;
+      font-family: var(--font-sans);
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
       color: #E8A690;
     }
@@ -754,10 +702,10 @@
 
     .field label {
       display: block;
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
       color: var(--navy);
       margin-bottom: 0.35rem;
     }
@@ -793,11 +741,11 @@
 
     .site-footer {
       background-color: var(--navy-deep);
-      color: rgba(250, 248, 245, 0.75);
+      color: rgba(250, 248, 245, 0.78);
       padding: 1.5rem 0;
-      font-family: var(--font-mono);
-      font-size: 0.74rem;
-      letter-spacing: 0.04em;
+      font-family: var(--font-sans);
+      font-size: 0.84rem;
+      letter-spacing: 0.01em;
     }
 
     .footer-inner {
@@ -813,15 +761,6 @@
       }
       .hero-copy {
         padding-bottom: 1.5rem;
-      }
-      .marginal-note {
-        writing-mode: horizontal-tb;
-        transform: none;
-        border-left: none;
-        border-bottom: 1px solid var(--rule);
-        padding-left: 0;
-        padding-bottom: 0.45rem;
-        margin-bottom: 0;
       }
       .portrait-editorial {
         border-left: none;
@@ -839,7 +778,7 @@
         position: static;
       }
       .chapter-trigger {
-        grid-template-columns: 50px minmax(0, 1fr) 30px;
+        grid-template-columns: minmax(0, 1fr) 30px;
       }
       .chapter-summary {
         display: none;
@@ -906,27 +845,21 @@
     <section class="hero-section">
       <div class="container">
         <div class="hero-folio">
-          <div class="marginal-note">§ 01 — Presentación</div>
-
           <div class="hero-copy">
-            <p class="kicker">Educación, gestión y psicología social aplicada</p>
+            <p class="kicker">Educación, gestión y psicología social</p>
             <h1 class="hero-title">
-              Escuchar, acompañar y fortalecer <em>vínculos</em> para transformar instituciones.
+              Escuchar, acompañar y fortalecer vínculos para transformar instituciones.
             </h1>
             <p class="hero-lead">
               Soy Yolanda María Verbauwede: Magíster y Licenciada en Gestión Educativa, Directora de institución educativa, Técnica Superior Operadora en Psicología Social y Secretaria General de la CGT Regional Villaguay (UDA). Trabajo junto a personas, docentes, equipos directivos y organizaciones que buscan herramientas reales de crecimiento.
             </p>
             <div class="hero-actions">
               <a href="#contacto" class="btn-editorial">Solicitar mentoría o taller</a>
-              <a href="#practica" class="btn-link-subtle">Explorar índice de servicios</a>
+              <a href="#practica" class="btn-link-subtle">Ver áreas de trabajo</a>
             </div>
           </div>
 
           <div class="portrait-editorial">
-            <div class="portrait-meta-top">
-              <strong>Yolanda M. Verbauwede</strong>
-              <span>Villaguay · Entre Ríos</span>
-            </div>
             <img src="assets/retrato-papel.jpg" alt="Retrato profesional de Yolanda María Verbauwede" />
           </div>
         </div>
@@ -936,17 +869,14 @@
         <div class="container">
           <div class="pillars-grid">
             <article class="pillar-item">
-              <div class="pillar-roman">Pilar I</div>
               <h2 class="pillar-title">Educación y Conducción</h2>
               <p class="pillar-text">Experiencia integral en escuelas como secretaria, vicedirectora y directora con antecedentes de oposición aprobados.</p>
             </article>
             <article class="pillar-item">
-              <div class="pillar-roman">Pilar II</div>
               <h2 class="pillar-title">Compromiso Social y Grupos</h2>
               <p class="pillar-text">Psicología Social, Counseling, Educación Emocional y Neurociencia aplicadas al trabajo en vínculos e instituciones.</p>
             </article>
             <article class="pillar-item">
-              <div class="pillar-roman">Pilar III</div>
               <h2 class="pillar-title">Derechos de los Trabajadores</h2>
               <p class="pillar-text">Representación gremial en UDA y conducción como Secretaria General de la CGT Regional Villaguay.</p>
             </article>
@@ -955,15 +885,15 @@
       </div>
     </section>
 
-    <!-- Servicios como Índice Interactivo -->
+    <!-- Servicios -->
     <section id="practica" class="section-block">
       <div class="container">
         <div class="section-header">
-          <div class="section-index">§ 02 — Servicios</div>
+          <div class="section-index">Propuestas</div>
           <div>
-            <h2 class="section-title">Índice de <em>práctica profesional</em></h2>
+            <h2 class="section-title">Áreas de práctica profesional</h2>
             <p class="section-intro">
-              Espacios de mentoría, formación y asesoramiento presenciales o virtuales, destinados a personas, docentes, equipos de conducción, instituciones y empresas. Seleccioná cada capítulo para ver su temario completo.
+              Espacios de mentoría, formación y asesoramiento presenciales o virtuales, destinados a personas, docentes, equipos de conducción, instituciones y empresas.
             </p>
           </div>
         </div>
@@ -971,7 +901,6 @@
         <div class="practice-index" id="practiceIndex">
           <div class="chapter-row is-open">
             <button class="chapter-trigger" type="button" aria-expanded="true">
-              <span class="chapter-num">01</span>
               <span class="chapter-name">Mentorías individuales, grupales y para mujeres</span>
               <span class="chapter-summary">Psicología Social, desarrollo personal, autoestima y liderazgo.</span>
               <span class="chapter-toggle-sign">−</span>
@@ -994,7 +923,6 @@
 
           <div class="chapter-row">
             <button class="chapter-trigger" type="button" aria-expanded="false">
-              <span class="chapter-num">02</span>
               <span class="chapter-name">Capacitaciones y talleres de formación</span>
               <span class="chapter-summary">Modalidad presencial o virtual para docentes, instituciones y empresas.</span>
               <span class="chapter-toggle-sign">+</span>
@@ -1022,7 +950,6 @@
 
           <div class="chapter-row">
             <button class="chapter-trigger" type="button" aria-expanded="false">
-              <span class="chapter-num">03</span>
               <span class="chapter-name">Asesoramiento y acompañamiento institucional</span>
               <span class="chapter-summary">Gestión educativa, coordinación de equipos y elaboración de proyectos.</span>
               <span class="chapter-toggle-sign">+</span>
@@ -1047,7 +974,6 @@
 
           <div class="chapter-row">
             <button class="chapter-trigger" type="button" aria-expanded="false">
-              <span class="chapter-num">04</span>
               <span class="chapter-name">Representación y formación gremial</span>
               <span class="chapter-summary">Derechos laborales, normativa docente, liderazgo colectivo y negociación.</span>
               <span class="chapter-toggle-sign">+</span>
@@ -1072,7 +998,6 @@
 
           <div class="chapter-row">
             <button class="chapter-trigger" type="button" aria-expanded="false">
-              <span class="chapter-num">05</span>
               <span class="chapter-name">Liderazgo y desarrollo de equipos</span>
               <span class="chapter-summary">Construcción de acuerdos, roles y convivencia organizacional.</span>
               <span class="chapter-toggle-sign">+</span>
@@ -1100,9 +1025,9 @@
     <section id="trayectoria" class="section-block">
       <div class="container">
         <div class="section-header">
-          <div class="section-index">§ 03 — Currículum</div>
+          <div class="section-index">Recorrido</div>
           <div>
-            <h2 class="section-title">Trayectoria y <em>formación académica</em></h2>
+            <h2 class="section-title">Trayectoria y formación académica</h2>
             <p class="section-intro">
               Un recorrido construido sobre la actualización permanente, el trabajo territorial en escuelas de Entre Ríos y la conducción de espacios colectivos.
             </p>
@@ -1147,25 +1072,25 @@
 
             <div class="degrees-group">
               <h4>Titulaciones de grado, posgrado y tecnicaturas</h4>
-              <ol class="degree-list">
-                <li><span>01</span> Maestría en Gestión y Asesoramiento Pedagógico de las Organizaciones Educativas.</li>
-                <li><span>02</span> Licenciatura en Gestión y Asesoramiento de las Instituciones Educativas.</li>
-                <li><span>03</span> Profesorado de Primer y Segundo Ciclo de la EGB.</li>
-                <li><span>04</span> Técnica Superior Operadora en Psicología Social.</li>
-                <li><span>05</span> Tecnicatura en Orientación del Desarrollo Personal – Counseling.</li>
-              </ol>
+              <ul class="degree-list">
+                <li>Maestría en Gestión y Asesoramiento Pedagógico de las Organizaciones Educativas.</li>
+                <li>Licenciatura en Gestión y Asesoramiento de las Instituciones Educativas.</li>
+                <li>Profesorado de Primer y Segundo Ciclo de la EGB.</li>
+                <li>Técnica Superior Operadora en Psicología Social.</li>
+                <li>Tecnicatura en Orientación del Desarrollo Personal – Counseling.</li>
+              </ul>
             </div>
 
             <div class="degrees-group">
               <h4>Diplomaturas y especializaciones</h4>
-              <ol class="degree-list">
-                <li><span>06</span> Diplomatura en Educación Emocional.</li>
-                <li><span>07</span> Diplomatura en Neurociencia y Educación.</li>
-                <li><span>08</span> Diplomatura en Abordaje Integral del Consumo Problemático.</li>
-                <li><span>09</span> Diplomatura en Educación en Valores.</li>
-                <li><span>10</span> Diplomatura en Inteligencia Artificial para Docentes.</li>
-                <li><span>11</span> Formación en Gestión Educativa, Investigación e Intervención Comunitaria.</li>
-              </ol>
+              <ul class="degree-list">
+                <li>Diplomatura en Educación Emocional.</li>
+                <li>Diplomatura en Neurociencia y Educación.</li>
+                <li>Diplomatura en Abordaje Integral del Consumo Problemático.</li>
+                <li>Diplomatura en Educación en Valores.</li>
+                <li>Diplomatura en Inteligencia Artificial para Docentes.</li>
+                <li>Formación en Gestión Educativa, Investigación e Intervención Comunitaria.</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -1176,9 +1101,9 @@
     <section id="territorio" class="section-block">
       <div class="container">
         <div class="section-header">
-          <div class="section-index">§ 04 — Territorio</div>
+          <div class="section-index">En territorio</div>
           <div>
-            <h2 class="section-title">Crónica de <em>talleres, escuelas y representación</em></h2>
+            <h2 class="section-title">Talleres, escuelas y vida gremial</h2>
             <p class="section-intro">
               Registros reales de jornadas de capacitación docente, dinámicas vivenciales en psicología social y espacios de construcción gremial.
             </p>
@@ -1226,8 +1151,8 @@
       <div class="container">
         <div class="contact-grid">
           <div>
-            <p class="kicker" style="color: #E8A690;">§ 05 — Contacto directo</p>
-            <h2 class="contact-title">Coordinemos una <em>mentoría, capacitación o asesoramiento</em></h2>
+            <p class="kicker" style="color: #E8A690;">Contacto</p>
+            <h2 class="contact-title">Coordinemos una mentoría, capacitación o asesoramiento</h2>
             <p style="color: rgba(250, 248, 245, 0.85); max-width: 48ch;">
               Propuestas adaptadas a escuelas, instituciones, empresas, sindicatos y procesos individuales de desarrollo personal, en modalidad presencial (Villaguay y Entre Ríos) o virtual.
             </p>
@@ -1261,7 +1186,7 @@
             </div>
 
             <div class="field">
-              <label for="cTopic">Eje de interés</label>
+              <label for="cTopic">Área de consulta</label>
               <select id="cTopic" name="topic">
                 <option value="Mentoría individual o para mujeres">Mentoría individual / para mujeres</option>
                 <option value="Mentoría en Psicología Social">Mentoría en Psicología Social</option>
@@ -1276,7 +1201,7 @@
               <textarea id="cMsg" name="msg" rows="3" required placeholder="Objetivo de la reunión, modalidad presencial/virtual o cantidad estimada de participantes..."></textarea>
             </div>
 
-            <button type="submit" class="btn-editorial">Preparar consulta</button>
+            <button type="submit" class="btn-editorial">Enviar consulta</button>
             <div class="form-feedback" id="formFeedback"></div>
           </form>
         </div>
